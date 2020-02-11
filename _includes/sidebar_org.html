@@ -1,0 +1,94 @@
+<!-- Sidebar -->
+  <div id="sidebar">
+    <div class="inner">
+        <nav id="menu">
+          <header class="major">
+            <h2><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h2>
+          </header>
+          <ul>
+            <li><b><br>Databases</b></li>
+            <li><a href="{{ 'databases/db-business.html' | absolute_url }}">Business</a></li>
+            <li><a href="{{ 'databases/db-customs.html' | absolute_url }}">Customs</a></li>
+            <li><a href="{{ 'databases/db-trade.html' | absolute_url }}">Trade</a></li>
+
+            <li><b><br>Blog</b></li>
+
+            {% assign pages = site.pages | where: "menu", true %}
+            {% assign documents = site.documents | where: "menu", true %}
+            <!-- {% assign nodes = pages | concat: documents | sort: "order" %} -->
+            {% for node in nodes %}
+              {% unless node.redirect_to %}
+                <li>
+                  <a
+                    {% if forloop.first %}id="_navigation"{% endif %}
+                    href="{{ node.url | relative_url }}"
+                    class="sidebar-nav-item{% if page.url contains node.url %} active{% endif %}"
+                    {% if path.rel %}rel="{{ node.rel }}"{% endif %}
+                    >
+                    {{ node.title }}
+                  </a>
+                </li>
+              {% else %}
+                <li>
+                  <a href="{{ node.redirect_to }}" class="sidebar-nav-item external" >{{ node.title }}</a>
+                </li>
+              {% endunless %}
+            {% endfor %}
+
+            <li><b><br>Site</b></li>
+            <li><a href="{{ 'about.html' | absolute_url }}">About</a></li>
+            <!-- <li><a href="{{ 'categories.html' | absolute_url }}">All Posts</a></li> -->
+            <li><a href="{{ 'elements.html' | absolute_url }}">Contact</a></li>
+
+          </ul>
+        </nav>
+
+
+
+
+
+      <!-- Section -->
+        <!-- <section>
+          <header class="major">
+            <h2>Ante interdum</h2>
+          </header>
+          <div class="mini-posts">
+            <article>
+              <a href="#" class="image"><img src="assets/images/pic07.jpg" alt="" /></a>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="assets/images/pic08.jpg" alt="" /></a>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="assets/images/pic09.jpg" alt="" /></a>
+              <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+            </article>
+          </div>
+          <ul class="actions">
+            <li><a href="#" class="button">More</a></li>
+          </ul>
+        </section> -->
+
+      <!-- Section -->
+        <!-- <section>
+          <header class="major">
+            <h2>Get in touch</h2>
+          </header>
+          <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+          <ul class="contact">
+            <li class="fa-envelope-o"><a href="#">{{ site.email }}</a></li>
+            <li class="fa-phone">{{ site.phone }}</li>
+            <li class="fa-home">{{ site.street_address }}<br />
+            {{ site.city }}, {{ site.state }} {{ site.zip_code }}<br />
+            {{ site.country }}</li>
+          </ul>
+        </section> -->
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p class="copyright">&copy; {{ site.title }}. All rights reserved. <BR>Design: <a href="https://html5up.net">HTML5 UP</a>. </p>
+        </footer>
+    </div>
+  </div>
