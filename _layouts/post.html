@@ -31,6 +31,11 @@
                 	<span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
                   {% endif %}
                 {{ page.content }}
+
+
+
+
+
                 <h2>========== Test comments ==========</h2>
                 <!-- Comments -->
                 {% if site.data.comments[page.slug] %}
@@ -63,10 +68,10 @@
                       <input name="fields[name]" type="text">
                       <label>E-mail (optional)</label>
                       <input name="fields[email]" type="email">
-                      <label>Website (optional)</label>
-                      <input name="fields[url]" type="url">
+                      <!-- <label>Website (optional)</label>
+                      <input name="fields[url]" type="url"> -->
                       <label>Message</label>
-                      <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
+                      <textarea style="width:100%" name="fields[message]" rows="5"></textarea>
                       <small>Comments will appear after moderation.</small>
                       <button type="submit">Submit comment</button>
                   </form>
