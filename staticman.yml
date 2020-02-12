@@ -3,7 +3,8 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email", "url", "message"]
+  # allowedFields: ["name", "email", "url", "message"]
+  allowedFields: ["name", "email", "message"]
   # (*) REQUIRED
   #
   # Name of the branch being used. Must match the one sent in the URL of the
@@ -32,7 +33,7 @@ comments:
   # Otherwise, entries will be published to the main branch automatically.
   # moderation: true
   moderation: false
-  
+
   # Name of the site. Used in notification emails.
   name: "tradeincharts.com"
   # Notification settings. When enabled, users can choose to receive notifications
