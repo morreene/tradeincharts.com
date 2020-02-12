@@ -61,3 +61,6 @@ collections:
   featured_tags:
     permalink:         /tag/:name/
     output:            true
+
+
+staticman_url: https://api.staticman.net/v3/entry/github/morreene/tradeincharts.com/master/comments
