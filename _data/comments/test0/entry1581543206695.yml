@@ -1,0 +1,12 @@
+_id: 4da7a6a0-4ddf-11ea-b671-c78708214b49
+name: check
+email: 349390e8f8f1df8efbdf673ee904fc10
+message: >-
+  To avoid displaying duplicates, I needed to exclude replies and only top level
+  comments in the main loop. This seemed like the perfect use-case for Jekyll’s
+  where_exp filter:To avoid displaying duplicates, I needed to exclude replies
+  and only top level comments in the main loop. This seemed like the perfect
+  use-case for Jekyll’s where_exp filter:To avoid displaying duplicates, I
+  needed to exclude replies and only top level comments in the main loop. This
+  seemed like the perfect use-case for Jekyll’s where_exp filter:
+date: 1581543206
