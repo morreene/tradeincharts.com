@@ -5,6 +5,25 @@
 
 @import "main";
 
+
+// Comments
+.comment {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.comment-module {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-bottom: .25em;
+    font-family: Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-family: var(--monospace-font);
+    font-size: .875em;
+    font-size: var(--text-sm);
+    border-bottom: 2px solid;
+}
+
+
+
 // My css
 blockquote {
 font-style: normal;
