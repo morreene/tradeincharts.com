@@ -30,7 +30,8 @@
                   {% if page.image %}
                 	<span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
                   {% endif %}
-                {{ page.content }}
+                <!-- {{ page.content }} -->
+                {{ post.content | remove: post.excerpt }}
 
 
 
