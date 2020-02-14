@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Data Analytics
+title: Data
 slug: data
 menu: true
 order: 7

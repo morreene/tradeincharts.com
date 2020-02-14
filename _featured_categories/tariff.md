@@ -1,9 +1,9 @@
 ---
 layout: list
-title: United States
-slug: usa
+title: Tariff
+slug: tariff
 menu: true
-order: 6
+order: 5
 description: >
    Econ China.
 accent_color: '#268bd2'

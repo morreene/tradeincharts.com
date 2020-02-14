@@ -20,3 +20,6 @@ title: About
       </form>
     </div>
 </aside>
+
+<h5 id="content">Legal Disclaimer</h5>
+<p><i>The Trade in Charts parties shall not be responsible or liable whatsoever in any manner for any content posted on the websites or services, including claims of infringement relating to content posted on the websites or services, for your use of the websites and services, or for the conduct of third parties whether on the websites, in connection with the services or otherwise relating to the websites or services.</i></p>

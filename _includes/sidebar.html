@@ -13,8 +13,8 @@
       </section> -->
 
       <header class="major">
-        <!-- <h2><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h2> -->
-        <h2><a href="{{ '/' | absolute_url }}">Topic</a></h2>
+        <h2><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h2>
+        <!-- <h2><a href="{{ '/' | absolute_url }}">Topic</a></h2> -->
       </header>
 
         <!-- <nav id="menu"> -->
@@ -63,9 +63,13 @@
             {% endfor %}
 
             <br>
+
+            <li><a href="{{ 'tags.html' | absolute_url }}">Tags</a></li>
+            <li><a href="{{ 'search.html' | absolute_url }}">Search</a></li>
             <li><a href="{{ 'about.html' | absolute_url }}">About</a></li>
+
             <!-- <li><a href="{{ 'categories.html' | absolute_url }}">All Posts</a></li> -->
-            <li><a href="{{ 'elements.html' | absolute_url }}">Disclaimer</a></li>
+            <!-- <li><a href="{{ 'elements.html' | absolute_url }}">Disclaimer</a></li> -->
 
           </ul>
         </nav>
